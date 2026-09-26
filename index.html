@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTank Dealers - سوق التجار</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استدعاء خط كايرو من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الهيدر والترويسة -->
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">FutureTank <span>Dealers</span></h1>
+            <p class="tagline">منصة التجار المعتمدين لمستلزمات وخدمات الخزانات</p>
+        </div>
+    </header>
+
+    <!-- شريط تصفية المحافظات -->
+    <section class="filter-section">
+        <div class="container">
+            <label for="gov-select">اختر المحافظة لعرض المنتجات المتاحة:</label>
+            <select id="gov-select" onchange="onGovernorateChange()">
+                <option value="All">جميع المحافظات</option>
+                <option value="الجيزة">الجيزة</option>
+                <option value="القاهرة">القاهرة</option>
+                <option value="الإسكندرية">الإسكندرية</option>
+                <option value="الفيوم">الفيوم</option>
+                <option value="القليوبية">القليوبية</option>
+                <!-- يمكنك إضافة باقي المحافظات حسب الحاجة -->
+            </select>
+        </div>
+    </section>
+
+    <!-- شبكة عرض المنتجات -->
+    <main class="container">
+        <div id="loading" class="loading-spinner">جاري تحميل المنتجات...</div>
+        <div id="products-container" class="products-grid"></div>
+    </main>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2026 FutureTank Dealers</p>
+            <p>للاشتراك كتاجر والتفعيل، التواصل عبر الواتساب/إينستاباي: <strong>01150402031</strong></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
